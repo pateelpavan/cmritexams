@@ -5,16 +5,16 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const LOGO_SLOTS = [
   {
     id: 'primary',
-    title: 'Primary Institute Logo',
+    title: 'logo ',
     description: 'Use this slot for your official crest or emblem. Replace the image in /public/logos/cmrit-primary.png.',
-    src: '/logos/cmrit-primary.png',
+    src: '#',
     accent: 'from-green-50 to-white',
   },
   {
     id: 'secondary',
-    title: 'Secondary Wordmark',
+    title: 'logo',
     description: 'Great for department marks or event-specific branding. Replace /public/logos/cmrit-secondary.png.',
-    src: '/logos/cmrit-secondary.png',
+    src: '#',
     accent: 'from-orange-50 to-white',
   },
 ] as const;
@@ -37,6 +37,7 @@ export function LogoSection() {
         >
           <p className="inline-flex items-center px-4 py-1 rounded-full bg-gray-100 text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">
             Available Logo Slots
+            
           </p>
           <h2 id="logo-showcase-title" className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-3">
             
