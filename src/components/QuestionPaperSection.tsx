@@ -221,7 +221,7 @@ const questionPaperSeed: QuestionPaperSeed[] = [
   { id: '25', subject: 'Statistical Foundations for Computer Science', year: '2', semester: '1', examType: 'sem', pdfUrl: '#', branch: 'CSE' },
   { id: '26', subject: 'Digital Logic Design and Computer Organization', year: '2', semester: '1', examType: 'mid1', pdfUrl: '#', branch: 'CSE' },
   { id: '27', subject: 'Digital Logic Design and Computer Organization', year: '2', semester: '1', examType: 'mid2', pdfUrl: '#', branch: 'CSE' },
-  { id: '28', subject: 'Digital Logic Design and Computer Organization', year: '2', semester: '1', examType: 'sem', pdfUrl: '#', branch: 'CSE' },
+  { id: '28', subject: 'Digital Logic Design and Computer Organization', year: '2', semester: '1', examType: 'sem', pdfUrl: 'https://t.me/cmritexam/16', branch: 'CSE' },
   { id: '29', subject: ' Software Design and Engineering ', year: '2', semester: '1', examType: 'mid1', pdfUrl: '#', branch: 'CSE' },
   { id: '30', subject: ' Software Design and Engineering ', year: '2', semester: '1', examType: 'mid2', pdfUrl: '#', branch: 'CSE' },
   { id: '31', subject: ' Software Design and Engineering ', year: '2', semester: '1', examType: 'sem', pdfUrl: '#', branch: 'CSE' },
