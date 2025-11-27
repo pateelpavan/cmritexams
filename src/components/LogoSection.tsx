@@ -4,7 +4,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const LOGO_SLOTS = [
   {
-    id: 'primary',
+    id: 'primary logo',
     title: 'Primary ',
     description: 'Use this slot for your official crest or emblem. Replace the image in /public/logos/cmrit-primary.png.',
     src: '#',
