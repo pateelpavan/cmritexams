@@ -7,14 +7,14 @@ const LOGO_SLOTS = [
     id: 'primary',
     title: 'Primary Institute Logo',
     description: 'Use this slot for your official crest or emblem. Replace the image in /public/logos/cmrit-primary.png.',
-    src: '/logos/cmrit-primary.png',
+    src: '#',
     accent: 'from-green-50 to-white',
   },
   {
     id: 'secondary',
     title: 'Secondary Wordmark',
     description: 'Great for department marks or event-specific branding. Replace /public/logos/cmrit-secondary.png.',
-    src: '/logos/cmrit-secondary.png',
+    src: '#',
     accent: 'from-orange-50 to-white',
   },
 ] as const;
