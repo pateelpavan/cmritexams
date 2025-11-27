@@ -4,7 +4,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const LOGO_SLOTS = [
   {
-    id: 'primary logo',
+    id: 'logo',
     title: 'Primary ',
     description: 'Use this slot for your official crest or emblem. Replace the image in /public/logos/cmrit-primary.png.',
     src: '#',
@@ -12,7 +12,7 @@ const LOGO_SLOTS = [
   },
   {
     id: 'secondary',
-    title: 'Secondary Wordmark',
+    title: 'logo',
     description: 'Great for department marks or event-specific branding. Replace /public/logos/cmrit-secondary.png.',
     src: '#',
     accent: 'from-orange-50 to-white',
