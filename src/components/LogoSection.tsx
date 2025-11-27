@@ -36,7 +36,8 @@ export function LogoSection() {
           transition={{ duration: 0.6 }}
         >
           <p className="inline-flex items-center px-4 py-1 rounded-full bg-gray-100 text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">
-            Available Logo Slots palce your logo
+            Available Logo Slots
+            
           </p>
           <h2 id="logo-showcase-title" className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-3">
             
