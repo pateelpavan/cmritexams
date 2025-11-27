@@ -40,7 +40,7 @@ export function AboutSection() {
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">
               About <span className="text-green-600">CMRIT</span>{' '}
-              <span className="text-orange-500">EXAM</span>
+              <span className="text-orange-500">EXAMS</span>
             </h2>
           </div>
 
