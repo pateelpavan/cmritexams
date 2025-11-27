@@ -1,22 +1,44 @@
+let hasReloadedForSW = false;
+
 export function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) {
     return;
   }
 
-  const swUrl = '/sw.js';
+  const swUrl = `${import.meta.env.BASE_URL ?? '/'}sw.js`;
 
   const register = () => {
     navigator.serviceWorker
-      .register(swUrl)
+      .register(swUrl, { scope: import.meta.env.BASE_URL ?? '/' })
       .then((registration) => {
-        if (registration.waiting) {
-          registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-        }
+        const maybeActivate = () => {
+          if (registration.waiting) {
+            registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+          }
+        };
+
+        maybeActivate();
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          if (newWorker) {
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                maybeActivate();
+              }
+            });
+          }
+        });
       })
       .catch((error) => {
         console.error('Service worker registration failed:', error);
       });
   };
+
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hasReloadedForSW) return;
+    hasReloadedForSW = true;
+    window.location.reload();
+  });
 
   if (document.readyState === 'complete') {
     register();
@@ -32,4 +54,3 @@ export function unregisterServiceWorker() {
     });
   }
 }
-
