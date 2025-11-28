@@ -14,7 +14,7 @@ const LOGO_SLOTS = [
     id: 'secondary',
     title: 'logo',
     description: 'Great for department marks or event-specific branding. Replace /public/logos/cmrit-secondary.png.',
-    src: 'https://instagram.fbpm3-1.fna.fbcdn.net/v/t51.2885-19/347082890_612440274146108_1379205501128926878_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MjAuYzIifQ&_nc_ht=instagram.fbpm3-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QEis2E0cN-UtSoWd34K3-vtv46_wKlfdN8EgdDCYhLImEDYwkpTMOJUs9dnH2cIrAs&_nc_ohc=O2k-ijLe6zMQ7kNvwHrZYtx&_nc_gid=EelmW3H5lJJ6Zd9xbAc4-w&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Afh4cjk_XSdz77vIBITA1xIbOUPwrc3HMaxrMIj4dKOAAw&oe=692F2A9E&_nc_sid=7a9f4b',
+    src: 'https://pbs.twimg.com/profile_images/1606240475362361344/JS3Uznef_400x400.jpg',
     accent: 'from-orange-50 to-white',
   },
 ] as const;
