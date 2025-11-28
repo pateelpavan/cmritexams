@@ -7,7 +7,7 @@ const LOGO_SLOTS = [
     id: 'primary',
     title: 'logo ',
     description: 'Use this slot for your official crest or emblem. Replace the image in /public/logos/cmrit-primary.png.',
-    src: '#',
+    src: 'https://avatars.githubusercontent.com/u/65121137?s=280&v=4',
     accent: 'from-green-50 to-white',
   },
   {
